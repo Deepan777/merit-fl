@@ -1,0 +1,13 @@
+{
+ "threads": 4,
+ "us_per_flow_5g_nidd": 40.542744140736886,
+ "flows_per_s_5g_nidd": 24665.325971243557,
+ "us_per_flow_ciciot2023": 21.335891113416494,
+ "flows_per_s_ciciot2023": 46869.38055149603,
+ "us_per_flow_cicids2017": 35.85498046874136,
+ "flows_per_s_cicids2017": 27890.128147519354,
+ "us_cusum_update_1000_devices": 2.9360000044107437,
+ "token_bytes": 60,
+ "context_record_bytes": 16,
+ "us_per_hmac": 2.1201000003202353
+}

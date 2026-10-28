@@ -1,0 +1,6 @@
+{
+ "cpu": "AMD Ryzen 7 6800H",
+ "cores": 8,
+ "logical_processors": 16,
+ "source": "Win32_Processor, read on 2026-10-27; the overhead measurements in v2_overhead.json ran on this laptop"
+}

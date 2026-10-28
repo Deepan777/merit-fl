@@ -1,0 +1,1149 @@
+provenance: scripts/v2_robust.py cal (validation, traces 100-102, 3 replicates); post-hoc
+  R6
+budgets:
+  b01: 0.001
+  b1: 0.01
+k_hours: 6
+burn_in_h: 1
+attack_start_h: 4
+follow_min: 60
+worlds:
+  W0:
+    hetero: false
+    block: 1
+    hyst: null
+  W1:
+    hetero: true
+    block: 1
+    hyst: null
+  W2:
+    hetero: true
+    block: 2
+    hyst: null
+  W3:
+    hetero: true
+    block: 1
+    hyst:
+    - 6.0
+    - 5
+chosen:
+  W0:
+    5g_nidd:
+      b01:
+        ewma/carry:
+          par: 0.02
+          h: 0.017545470890204803
+          val_hazard: 0.0009523809523809524
+          val_contained: 1.0
+        ewma/memory:
+          par: 0.02
+          h: 0.01873148378458322
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.45555555555555555
+        ewma/reset:
+          par: 0.05
+          h: 0.028970313555065057
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.3
+        llr/carry:
+          par: 0.02
+          h: 11.57275921417795
+          val_hazard: 0.0009523809523809524
+          val_contained: 1.0
+        llr/memory:
+          par: 0.05
+          h: 10.686487014075926
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.8888888888888888
+        llr/reset:
+          par: 0.1
+          h: 9.609460868474722
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.6111111111111112
+        share/carry:
+          par: 0.005
+          h: 1.431330510566008
+          val_hazard: 0.0007936507936507937
+          val_contained: 1.0
+        share/memory:
+          par: 0.02
+          h: 0.5518400908463748
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.4777777777777778
+        share/reset:
+          par: 0.02
+          h: 0.4765760580968697
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.25555555555555554
+      b1:
+        ewma/carry:
+          par: 0.02
+          h: 0.014108294637587351
+          val_hazard: 0.01
+          val_contained: 1.0
+        ewma/memory:
+          par: 0.05
+          h: 0.022792587853741858
+          val_hazard: 0.009047619047619047
+          val_contained: 0.9111111111111111
+        ewma/reset:
+          par: 0.1
+          h: 0.028970313555065057
+          val_hazard: 0.009523809523809525
+          val_contained: 0.4777777777777778
+        llr/carry:
+          par: 0.02
+          h: 8.873543195940439
+          val_hazard: 0.008888888888888889
+          val_contained: 1.0
+        llr/memory:
+          par: 0.05
+          h: 8.640981649172186
+          val_hazard: 0.0077777777777777776
+          val_contained: 0.9666666666666667
+        llr/reset:
+          par: 0.1
+          h: 7.368162123484287
+          val_hazard: 0.008888888888888889
+          val_contained: 0.8111111111111111
+        share/carry:
+          par: 0.005
+          h: 0.9740409846775848
+          val_hazard: 0.009206349206349206
+          val_contained: 1.0
+        share/memory:
+          par: 0.01
+          h: 0.5035152240064954
+          val_hazard: 0.009047619047619047
+          val_contained: 0.8666666666666667
+        share/reset:
+          par: 0.02
+          h: 0.23749109995178147
+          val_hazard: 0.009841269841269842
+          val_contained: 0.5111111111111111
+    cicids2017:
+      b01:
+        ewma/carry:
+          par: 0.02
+          h: 0.014108294637587351
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.8666666666666667
+        ewma/memory:
+          par: 0.02
+          h: 0.013215006121295858
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.7444444444444445
+        ewma/reset:
+          par: 0.05
+          h: 0.019144376709752376
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.43333333333333335
+        llr/carry:
+          par: 0.05
+          h: 36.25753456144048
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.7666666666666667
+        llr/memory:
+          par: 0.05
+          h: 36.25753456144048
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.6444444444444445
+        llr/reset:
+          par: 0.1
+          h: 19.684147740078622
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.4888888888888889
+        share/carry:
+          par: 0.005
+          h: 0.8887438095322711
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.8666666666666667
+        share/memory:
+          par: 0.01
+          h: 0.4765760580968697
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.7333333333333333
+        share/reset:
+          par: 0.01
+          h: 0.35544316327755415
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.4
+      b1:
+        ewma/carry:
+          par: 0.02
+          h: 0.012111311260238662
+          val_hazard: 0.006984126984126984
+          val_contained: 0.8666666666666667
+        ewma/memory:
+          par: 0.05
+          h: 0.016434552238322516
+          val_hazard: 0.009047619047619047
+          val_contained: 0.8555555555555555
+        ewma/reset:
+          par: 0.1
+          h: 0.020438470084315503
+          val_hazard: 0.01
+          val_contained: 0.7222222222222222
+        llr/carry:
+          par: 0.05
+          h: 26.362734163896572
+          val_hazard: 0.009841269841269842
+          val_contained: 0.7888888888888889
+        llr/memory:
+          par: 0.1
+          h: 16.344766527746067
+          val_hazard: 0.009682539682539683
+          val_contained: 0.7111111111111111
+        llr/reset:
+          par: 0.1
+          h: 15.49925243067391
+          val_hazard: 0.009841269841269842
+          val_contained: 0.6333333333333333
+        share/carry:
+          par: 0.005
+          h: 0.6159905070099335
+          val_hazard: 0.009841269841269842
+          val_contained: 0.8666666666666667
+        share/memory:
+          par: 0.01
+          h: 0.2650990123701805
+          val_hazard: 0.009523809523809525
+          val_contained: 0.8333333333333334
+        share/reset:
+          par: 0.02
+          h: 0.13703878039757794
+          val_hazard: 0.009841269841269842
+          val_contained: 0.7555555555555555
+    ciciot2023:
+      b01:
+        ewma/carry:
+          par: 0.02
+          h: 0.026550762182900763
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.5111111111111111
+        ewma/memory:
+          par: 0.02
+          h: 0.025978133361948656
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.15555555555555556
+        ewma/reset:
+          par: 0.02
+          h: 0.02230101278635863
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.16666666666666666
+        llr/carry:
+          par: 0.02
+          h: 10.686487014075926
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.45555555555555555
+        llr/memory:
+          par: 0.02
+          h: 10.406411074326241
+          val_hazard: 0.0006349206349206349
+          val_contained: 0.2777777777777778
+        llr/reset:
+          par: 0.05
+          h: 9.112363854836362
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.23333333333333334
+        share/carry:
+          par: 0.01
+          h: 1.657375660321954
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.4888888888888889
+        share/memory:
+          par: 0.005
+          h: 1.8842644563601922
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.15555555555555556
+        share/reset:
+          par: 0.005
+          h: 1.8164422669905986
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.15555555555555556
+      b1:
+        ewma/carry:
+          par: 0.02
+          h: 0.020888989637178734
+          val_hazard: 0.01
+          val_contained: 0.6888888888888889
+        ewma/memory:
+          par: 0.02
+          h: 0.019566370919668397
+          val_hazard: 0.00873015873015873
+          val_contained: 0.3111111111111111
+        ewma/reset:
+          par: 0.02
+          h: 0.016080102968419174
+          val_hazard: 0.009047619047619047
+          val_contained: 0.25555555555555554
+        llr/carry:
+          par: 0.02
+          h: 8.41451517309226
+          val_hazard: 0.009523809523809525
+          val_contained: 0.6666666666666666
+        llr/memory:
+          par: 0.02
+          h: 7.77010957048437
+          val_hazard: 0.01
+          val_contained: 0.3888888888888889
+        llr/reset:
+          par: 0.05
+          h: 6.803888976948188
+          val_hazard: 0.008412698412698413
+          val_contained: 0.3
+        share/carry:
+          par: 0.005
+          h: 1.8164422669905986
+          val_hazard: 0.009523809523809525
+          val_contained: 0.6888888888888889
+        share/memory:
+          par: 0.005
+          h: 1.3301463131360798
+          val_hazard: 0.009047619047619047
+          val_contained: 0.24444444444444444
+        share/reset:
+          par: 0.01
+          h: 0.7675303560407628
+          val_hazard: 0.009682539682539683
+          val_contained: 0.2111111111111111
+  W1:
+    5g_nidd:
+      b01:
+        ewma/carry:
+          par: 0.02
+          h: 0.04480579740135414
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.43333333333333335
+        ewma/memory:
+          par: 0.02
+          h: 0.0401780594493195
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.16666666666666666
+        ewma/reset:
+          par: 0.02
+          h: 0.036822456180244656
+          val_hazard: 0.0006349206349206349
+          val_contained: 0.16666666666666666
+        llr/carry:
+          par: 0.1
+          h: 39.26451383196381
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.7444444444444445
+        llr/memory:
+          par: 0.1
+          h: 36.25753456144048
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.6111111111111112
+        llr/reset:
+          par: 0.1
+          h: 29.317463295184194
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.5111111111111111
+        share/carry:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.25746031746031744
+          val_contained: 0.15555555555555556
+        share/memory:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.10174603174603175
+          val_contained: 0.03333333333333333
+        share/reset:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.07650793650793651
+          val_contained: 0.0
+      b1:
+        ewma/carry:
+          par: 0.02
+          h: 0.03161035685895673
+          val_hazard: 0.009682539682539683
+          val_contained: 0.8555555555555555
+        ewma/memory:
+          par: 0.02
+          h: 0.028345501492067722
+          val_hazard: 0.009365079365079364
+          val_contained: 0.3111111111111111
+        ewma/reset:
+          par: 0.02
+          h: 0.021820039676437336
+          val_hazard: 0.009682539682539683
+          val_contained: 0.2222222222222222
+        llr/carry:
+          par: 0.1
+          h: 23.70579424279324
+          val_hazard: 0.009841269841269842
+          val_contained: 0.8
+        llr/memory:
+          par: 0.1
+          h: 22.479494486198448
+          val_hazard: 0.009682539682539683
+          val_contained: 0.7222222222222222
+        llr/reset:
+          par: 0.1
+          h: 18.665887590884395
+          val_hazard: 0.01
+          val_contained: 0.6555555555555556
+        share/carry:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.25746031746031744
+          val_contained: 0.15555555555555556
+        share/memory:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.10174603174603175
+          val_contained: 0.03333333333333333
+        share/reset:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.07650793650793651
+          val_contained: 0.0
+    cicids2017:
+      b01:
+        ewma/carry:
+          par: 0.02
+          h: 0.047834513689076
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.23333333333333334
+        ewma/memory:
+          par: 0.02
+          h: 0.046802851359162415
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.07777777777777778
+        ewma/reset:
+          par: 0.02
+          h: 0.04480579740135414
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.14444444444444443
+        llr/carry:
+          par: 0.1
+          h: 54.00177608475204
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.7
+        llr/memory:
+          par: 0.1
+          h: 55.455168428862194
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.45555555555555555
+        llr/reset:
+          par: 0.1
+          h: 51.20826643938127
+          val_hazard: 0.0006349206349206349
+          val_contained: 0.3111111111111111
+        share/carry:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.04984126984126984
+          val_contained: 0.07777777777777778
+        share/memory:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.014761904761904763
+          val_contained: 0.0
+        share/reset:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.013333333333333334
+          val_contained: 0.0
+      b1:
+        ewma/carry:
+          par: 0.02
+          h: 0.030261558945161398
+          val_hazard: 0.009206349206349206
+          val_contained: 0.7333333333333333
+        ewma/memory:
+          par: 0.02
+          h: 0.028345501492067722
+          val_hazard: 0.009841269841269842
+          val_contained: 0.28888888888888886
+        ewma/reset:
+          par: 0.02
+          h: 0.023808483796275228
+          val_hazard: 0.009841269841269842
+          val_contained: 0.2
+        llr/carry:
+          par: 0.1
+          h: 32.60335778227304
+          val_hazard: 0.009841269841269842
+          val_contained: 0.7888888888888889
+        llr/memory:
+          par: 0.1
+          h: 32.60335778227304
+          val_hazard: 0.009523809523809525
+          val_contained: 0.6444444444444445
+        llr/reset:
+          par: 0.1
+          h: 29.317463295184194
+          val_hazard: 0.009841269841269842
+          val_contained: 0.5333333333333333
+        share/carry:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.04984126984126984
+          val_contained: 0.07777777777777778
+        share/memory:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.014761904761904763
+          val_contained: 0.0
+        share/reset:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.013333333333333334
+          val_contained: 0.0
+    ciciot2023:
+      b01:
+        ewma/carry:
+          par: 0.02
+          h: 0.06780257302086583
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.03333333333333333
+        ewma/memory:
+          par: 0.05
+          h: 0.11195264080095313
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.011111111111111112
+        ewma/reset:
+          par: 0.02
+          h: 0.051067960678705525
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.05555555555555555
+        llr/carry:
+          par: 0.1
+          h: 78.32201154035432
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.2
+        llr/memory:
+          par: 0.1
+          h: 72.32390683605483
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.1
+        llr/reset:
+          par: 0.1
+          h: 51.20826643938127
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.07777777777777778
+        share/carry:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.19507936507936507
+          val_contained: 0.23333333333333334
+        share/memory:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.041428571428571426
+          val_contained: 0.044444444444444446
+        share/reset:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.027936507936507936
+          val_contained: 0.03333333333333333
+      b1:
+        ewma/carry:
+          par: 0.02
+          h: 0.04996656155839293
+          val_hazard: 0.009047619047619047
+          val_contained: 0.24444444444444444
+        ewma/memory:
+          par: 0.02
+          h: 0.04579343922227641
+          val_hazard: 0.01
+          val_contained: 0.14444444444444443
+        ewma/reset:
+          par: 0.02
+          h: 0.034490985361664964
+          val_hazard: 0.009365079365079364
+          val_contained: 0.13333333333333333
+        llr/carry:
+          par: 0.1
+          h: 44.840469287463684
+          val_hazard: 0.009841269841269842
+          val_contained: 0.2
+        llr/memory:
+          par: 0.1
+          h: 41.40646874934477
+          val_hazard: 0.009365079365079364
+          val_contained: 0.14444444444444443
+        llr/reset:
+          par: 0.1
+          h: 30.916787431451358
+          val_hazard: 0.009682539682539683
+          val_contained: 0.13333333333333333
+        share/carry:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.19507936507936507
+          val_contained: 0.23333333333333334
+        share/memory:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.041428571428571426
+          val_contained: 0.044444444444444446
+        share/reset:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.027936507936507936
+          val_contained: 0.03333333333333333
+  W2:
+    5g_nidd:
+      b01:
+        ewma/carry:
+          par: 0.02
+          h: 0.037634123414886665
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.7222222222222222
+        ewma/memory:
+          par: 0.02
+          h: 0.036822456180244656
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.23333333333333334
+        ewma/reset:
+          par: 0.02
+          h: 0.03230713522735687
+          val_hazard: 0.0006349206349206349
+          val_contained: 0.23333333333333334
+        llr/carry:
+          par: 0.1
+          h: 37.23336215394787
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.8888888888888888
+        llr/memory:
+          par: 0.1
+          h: 37.23336215394787
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.8666666666666667
+        llr/reset:
+          par: 0.1
+          h: 30.916787431451358
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.6444444444444445
+        share/carry:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.1907936507936508
+          val_contained: 0.1
+        share/memory:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.09523809523809523
+          val_contained: 0.06666666666666667
+        share/reset:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.04746031746031746
+          val_contained: 0.03333333333333333
+      b1:
+        ewma/carry:
+          par: 0.02
+          h: 0.026550762182900763
+          val_hazard: 0.009523809523809525
+          val_contained: 0.9555555555555556
+        ewma/memory:
+          par: 0.02
+          h: 0.027136013302846273
+          val_hazard: 0.008571428571428572
+          val_contained: 0.6444444444444445
+        ewma/reset:
+          par: 0.02
+          h: 0.021820039676437336
+          val_hazard: 0.008095238095238095
+          val_contained: 0.35555555555555557
+        llr/carry:
+          par: 0.1
+          h: 21.89034245382083
+          val_hazard: 0.01
+          val_contained: 0.9111111111111111
+        llr/memory:
+          par: 0.1
+          h: 22.479494486198448
+          val_hazard: 0.008412698412698413
+          val_contained: 0.9
+        llr/reset:
+          par: 0.1
+          h: 20.213922716013933
+          val_hazard: 0.009841269841269842
+          val_contained: 0.8222222222222222
+        share/carry:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.1907936507936508
+          val_contained: 0.1
+        share/memory:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.09523809523809523
+          val_contained: 0.06666666666666667
+        share/reset:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.04746031746031746
+          val_contained: 0.03333333333333333
+    cicids2017:
+      b01:
+        ewma/carry:
+          par: 0.02
+          h: 0.04196884897420126
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.4222222222222222
+        ewma/memory:
+          par: 0.02
+          h: 0.046802851359162415
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.12222222222222222
+        ewma/reset:
+          par: 0.02
+          h: 0.03602829443370791
+          val_hazard: 0.0006349206349206349
+          val_contained: 0.17777777777777778
+        llr/carry:
+          par: 0.1
+          h: 49.86617868621498
+          val_hazard: 0.0006349206349206349
+          val_contained: 0.7555555555555555
+        llr/memory:
+          par: 0.1
+          h: 44.840469287463684
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.6555555555555556
+        llr/reset:
+          par: 0.1
+          h: 38.235452963240874
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.45555555555555555
+        share/carry:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.03571428571428571
+          val_contained: 0.1
+        share/memory:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.014126984126984127
+          val_contained: 0.03333333333333333
+        share/reset:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.006190476190476191
+          val_contained: 0.03333333333333333
+      b1:
+        ewma/carry:
+          par: 0.02
+          h: 0.028345501492067722
+          val_hazard: 0.009841269841269842
+          val_contained: 0.7666666666666667
+        ewma/memory:
+          par: 0.02
+          h: 0.027136013302846273
+          val_hazard: 0.009206349206349206
+          val_contained: 0.6111111111111112
+        ewma/reset:
+          par: 0.02
+          h: 0.020888989637178734
+          val_hazard: 0.009841269841269842
+          val_contained: 0.32222222222222224
+        llr/carry:
+          par: 0.1
+          h: 30.106507282090814
+          val_hazard: 0.01
+          val_contained: 0.8222222222222222
+        llr/memory:
+          par: 0.1
+          h: 30.916787431451358
+          val_hazard: 0.008412698412698413
+          val_contained: 0.7333333333333333
+        llr/reset:
+          par: 0.1
+          h: 27.072255197861924
+          val_hazard: 0.009841269841269842
+          val_contained: 0.5555555555555556
+        share/carry:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.03571428571428571
+          val_contained: 0.1
+        share/memory:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.014126984126984127
+          val_contained: 0.03333333333333333
+        share/reset:
+          par: 0.005
+          h: 27.372887491786155
+          val_hazard: 0.009523809523809525
+          val_contained: 0.03333333333333333
+    ciciot2023:
+      b01:
+        ewma/carry:
+          par: 0.02
+          h: 0.06780257302086583
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.03333333333333333
+        ewma/memory:
+          par: 0.02
+          h: 0.06634025313795631
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.0
+        ewma/reset:
+          par: 0.02
+          h: 0.05820533857529328
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.0
+        llr/carry:
+          par: 0.1
+          h: 70.4284115112773
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.13333333333333333
+        llr/memory:
+          par: 0.1
+          h: 70.4284115112773
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.06666666666666667
+        llr/reset:
+          par: 0.1
+          h: 66.78515269408356
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.06666666666666667
+        share/carry:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.2288888888888889
+          val_contained: 0.28888888888888886
+        share/memory:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.11317460317460318
+          val_contained: 0.15555555555555556
+        share/reset:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.04206349206349207
+          val_contained: 0.1
+      b1:
+        ewma/carry:
+          par: 0.02
+          h: 0.046802851359162415
+          val_hazard: 0.009682539682539683
+          val_contained: 0.2777777777777778
+        ewma/memory:
+          par: 0.02
+          h: 0.046802851359162415
+          val_hazard: 0.009841269841269842
+          val_contained: 0.08888888888888889
+        ewma/reset:
+          par: 0.02
+          h: 0.037634123414886665
+          val_hazard: 0.009682539682539683
+          val_contained: 0.1111111111111111
+        llr/carry:
+          par: 0.1
+          h: 42.52087366414768
+          val_hazard: 0.009523809523809525
+          val_contained: 0.17777777777777778
+        llr/memory:
+          par: 0.1
+          h: 42.52087366414768
+          val_hazard: 0.01
+          val_contained: 0.13333333333333333
+        llr/reset:
+          par: 0.05
+          h: 102.14654515247724
+          val_hazard: 0.009523809523809525
+          val_contained: 0.1
+        share/carry:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.2288888888888889
+          val_contained: 0.28888888888888886
+        share/memory:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.11317460317460318
+          val_contained: 0.15555555555555556
+        share/reset:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.04206349206349207
+          val_contained: 0.1
+  W3:
+    5g_nidd:
+      b01:
+        ewma/carry:
+          par: 0.02
+          h: 0.04480579740135414
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.5444444444444444
+        ewma/memory:
+          par: 0.02
+          h: 0.04289395672424521
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.15555555555555556
+        ewma/reset:
+          par: 0.02
+          h: 0.034490985361664964
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.17777777777777778
+        llr/carry:
+          par: 0.1
+          h: 32.60335778227304
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.8
+        llr/memory:
+          par: 0.1
+          h: 30.916787431451358
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.6666666666666666
+        llr/reset:
+          par: 0.1
+          h: 24.343806959438954
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.5444444444444444
+        share/carry:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.20222222222222222
+          val_contained: 0.1111111111111111
+        share/memory:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.0892063492063492
+          val_contained: 0.06666666666666667
+        share/reset:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.062380952380952384
+          val_contained: 0.03333333333333333
+      b1:
+        ewma/carry:
+          par: 0.02
+          h: 0.029608898177852033
+          val_hazard: 0.009523809523809525
+          val_contained: 0.9111111111111111
+        ewma/memory:
+          par: 0.02
+          h: 0.026550762182900763
+          val_hazard: 0.009206349206349206
+          val_contained: 0.36666666666666664
+        ewma/reset:
+          par: 0.02
+          h: 0.021820039676437336
+          val_hazard: 0.008571428571428572
+          val_contained: 0.28888888888888886
+        llr/carry:
+          par: 0.1
+          h: 22.479494486198448
+          val_hazard: 0.00873015873015873
+          val_contained: 0.8222222222222222
+        llr/memory:
+          par: 0.1
+          h: 20.213922716013933
+          val_hazard: 0.009841269841269842
+          val_contained: 0.7888888888888889
+        llr/reset:
+          par: 0.1
+          h: 17.23640504866032
+          val_hazard: 0.01
+          val_contained: 0.7222222222222222
+        share/carry:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.20222222222222222
+          val_contained: 0.1111111111111111
+        share/memory:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.0892063492063492
+          val_contained: 0.06666666666666667
+        share/reset:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.062380952380952384
+          val_contained: 0.03333333333333333
+    cicids2017:
+      b01:
+        ewma/carry:
+          par: 0.02
+          h: 0.05219363763572313
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.14444444444444443
+        ewma/memory:
+          par: 0.02
+          h: 0.04579343922227641
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.06666666666666667
+        ewma/reset:
+          par: 0.02
+          h: 0.03525126062878851
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.2
+        llr/carry:
+          par: 0.1
+          h: 54.00177608475204
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.6666666666666666
+        llr/memory:
+          par: 0.1
+          h: 55.455168428862194
+          val_hazard: 0.0007936507936507937
+          val_contained: 0.3333333333333333
+        llr/reset:
+          par: 0.1
+          h: 48.55926493253042
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.28888888888888886
+        share/carry:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.0380952380952381
+          val_contained: 0.17777777777777778
+        share/memory:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.013650793650793651
+          val_contained: 0.06666666666666667
+        share/reset:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.01126984126984127
+          val_contained: 0.0
+      b1:
+        ewma/carry:
+          par: 0.02
+          h: 0.034490985361664964
+          val_hazard: 0.009523809523809525
+          val_contained: 0.7222222222222222
+        ewma/memory:
+          par: 0.02
+          h: 0.028345501492067722
+          val_hazard: 0.009523809523809525
+          val_contained: 0.3333333333333333
+        ewma/reset:
+          par: 0.02
+          h: 0.020888989637178734
+          val_hazard: 0.009841269841269842
+          val_contained: 0.28888888888888886
+        llr/carry:
+          par: 0.1
+          h: 32.60335778227304
+          val_hazard: 0.01
+          val_contained: 0.7222222222222222
+        llr/memory:
+          par: 0.1
+          h: 32.60335778227304
+          val_hazard: 0.009047619047619047
+          val_contained: 0.5222222222222223
+        llr/reset:
+          par: 0.1
+          h: 27.80087213039794
+          val_hazard: 0.009365079365079364
+          val_contained: 0.4222222222222222
+        share/carry:
+          par: 0.04
+          h: 30.0
+          val_hazard: 0.0380952380952381
+          val_contained: 0.17777777777777778
+        share/memory:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.013650793650793651
+          val_contained: 0.06666666666666667
+        share/reset:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.01126984126984127
+          val_contained: 0.0
+    ciciot2023:
+      b01:
+        ewma/carry:
+          par: 0.02
+          h: 0.07082462384138781
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.022222222222222223
+        ewma/memory:
+          par: 0.02
+          h: 0.06490947157792572
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.011111111111111112
+        ewma/reset:
+          par: 0.02
+          h: 0.05695000533205578
+          val_hazard: 0.0006349206349206349
+          val_contained: 0.03333333333333333
+        llr/carry:
+          par: 0.1
+          h: 116.65238083252464
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.08888888888888889
+        llr/memory:
+          par: 0.1
+          h: 102.14654515247724
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.07777777777777778
+        llr/reset:
+          par: 0.1
+          h: 61.670570845718416
+          val_hazard: 0.0009523809523809524
+          val_contained: 0.06666666666666667
+        share/carry:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.18873015873015872
+          val_contained: 0.34444444444444444
+        share/memory:
+          par: 0.02
+          h: 30.0
+          val_hazard: 0.036349206349206346
+          val_contained: 0.1
+        share/reset:
+          par: 0.02
+          h: 30.0
+          val_hazard: 0.02507936507936508
+          val_contained: 0.044444444444444446
+      b1:
+        ewma/carry:
+          par: 0.02
+          h: 0.051067960678705525
+          val_hazard: 0.009047619047619047
+          val_contained: 0.17777777777777778
+        ewma/memory:
+          par: 0.02
+          h: 0.047834513689076
+          val_hazard: 0.009206349206349206
+          val_contained: 0.06666666666666667
+        ewma/reset:
+          par: 0.02
+          h: 0.036822456180244656
+          val_hazard: 0.009523809523809525
+          val_contained: 0.06666666666666667
+        llr/carry:
+          par: 0.05
+          h: 303.47090853709653
+          val_hazard: 0.01
+          val_contained: 0.1
+        llr/memory:
+          par: 0.1
+          h: 47.28660332337687
+          val_hazard: 0.009523809523809525
+          val_contained: 0.1
+        llr/reset:
+          par: 0.1
+          h: 36.25753456144048
+          val_hazard: 0.009523809523809525
+          val_contained: 0.08888888888888889
+        share/carry:
+          par: 0.005
+          h: 30.0
+          val_hazard: 0.18873015873015872
+          val_contained: 0.34444444444444444
+        share/memory:
+          par: 0.02
+          h: 30.0
+          val_hazard: 0.036349206349206346
+          val_contained: 0.1
+        share/reset:
+          par: 0.02
+          h: 30.0
+          val_hazard: 0.02507936507936508
+          val_contained: 0.044444444444444446

@@ -1,0 +1,79 @@
+{
+ "seed": 46,
+ "dataset": "5g_nidd",
+ "selection": "random",
+ "forwarding": false,
+ "round_s": 60,
+ "rounds": 60,
+ "curve": [
+  {
+   "round": 10,
+   "macro_f1": 0.6135378258727564,
+   "acc": 0.887229395516156,
+   "uplink_MB": 32.036672,
+   "energy_J": 3004.7517795562744,
+   "delivered": 77
+  },
+  {
+   "round": 20,
+   "macro_f1": 0.6667410867253918,
+   "acc": 0.9382347273077665,
+   "uplink_MB": 63.85688,
+   "energy_J": 6009.91414642334,
+   "delivered": 133
+  },
+  {
+   "round": 30,
+   "macro_f1": 0.7096111593470324,
+   "acc": 0.9676559388449926,
+   "uplink_MB": 97.192336,
+   "energy_J": 9015.109363555908,
+   "delivered": 204
+  },
+  {
+   "round": 40,
+   "macro_f1": 0.7120479963533262,
+   "acc": 0.9692619001734438,
+   "uplink_MB": 130.094864,
+   "energy_J": 12019.875106811523,
+   "delivered": 280
+  },
+  {
+   "round": 50,
+   "macro_f1": 0.7120151692063201,
+   "acc": 0.9692940194000128,
+   "uplink_MB": 163.863248,
+   "energy_J": 15025.343175888062,
+   "delivered": 351
+  },
+  {
+   "round": 60,
+   "macro_f1": 0.7155395410985439,
+   "acc": 0.9726022997366224,
+   "uplink_MB": 197.848096,
+   "energy_J": 18030.336145401,
+   "delivered": 408
+  }
+ ],
+ "macro_f1_last3": 0.7132009022193967,
+ "final": {
+  "acc": 0.9726022997366224,
+  "macro_f1": 0.7155395410985439,
+  "far": 0.1464816650148662
+ },
+ "stats": {
+  "selected": 960,
+  "delivered": 408,
+  "interrupted": 506,
+  "forwarded": 0,
+  "lost_handover": 506,
+  "lost_outage": 46,
+  "dead_skipped": 41
+ },
+ "energy_J": 18030.336145401,
+ "uplink_MB": 197.848096,
+ "handovers_per_device_hour": 72.28,
+ "outage_share": 0.05108888888888889,
+ "wall_s": 212.17128992080688,
+ "peak_vram_MB": 0.0
+}

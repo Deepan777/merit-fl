@@ -1,0 +1,16 @@
+k: 0.005
+h: 1.2
+h_reset: 0.8
+q: 0.5
+fa_target: 0.01
+flows_per_s: 2
+window_s: 30
+trust:
+  tau0: 0.5
+  eps: 0.2
+  delta: 0.85
+calibration:
+  cusum_false: 0.006613756613756614
+  cusum_det_persistent_0.05: 0.8111111111111111
+  reset_cal_false: 0.0068783068783068784
+  trust_q_false: 0.0026455026455026454

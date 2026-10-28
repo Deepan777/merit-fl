@@ -1,0 +1,79 @@
+{
+ "seed": 42,
+ "dataset": "ciciot2023",
+ "selection": "oracle",
+ "forwarding": false,
+ "round_s": 60,
+ "rounds": 60,
+ "curve": [
+  {
+   "round": 10,
+   "macro_f1": 0.2921046446629886,
+   "acc": 0.7443375943734271,
+   "uplink_MB": 34.96448,
+   "energy_J": 1641.9143800735474,
+   "delivered": 152
+  },
+  {
+   "round": 20,
+   "macro_f1": 0.3411739034299811,
+   "acc": 0.7530707821536308,
+   "uplink_MB": 69.92896,
+   "energy_J": 3283.6408824920654,
+   "delivered": 305
+  },
+  {
+   "round": 30,
+   "macro_f1": 0.3337073357356118,
+   "acc": 0.75420409659839,
+   "uplink_MB": 104.674912,
+   "energy_J": 4925.138589859009,
+   "delivered": 460
+  },
+  {
+   "round": 40,
+   "macro_f1": 0.39189283871348496,
+   "acc": 0.7550874152097465,
+   "uplink_MB": 139.639392,
+   "energy_J": 6567.033919334412,
+   "delivered": 616
+  },
+  {
+   "round": 50,
+   "macro_f1": 0.35521470950770717,
+   "acc": 0.7553874102098298,
+   "uplink_MB": 174.603872,
+   "energy_J": 8207.963390350342,
+   "delivered": 774
+  },
+  {
+   "round": 60,
+   "macro_f1": 0.42334106089745793,
+   "acc": 0.77130381160314,
+   "uplink_MB": 209.568352,
+   "energy_J": 9849.988463401794,
+   "delivered": 927
+  }
+ ],
+ "macro_f1_last3": 0.39014953637288335,
+ "final": {
+  "acc": 0.77130381160314,
+  "macro_f1": 0.42334106089745793,
+  "far": 0.10784313725490197
+ },
+ "stats": {
+  "selected": 960,
+  "delivered": 927,
+  "interrupted": 32,
+  "forwarded": 0,
+  "lost_handover": 32,
+  "lost_outage": 1,
+  "dead_skipped": 208
+ },
+ "energy_J": 9849.988463401794,
+ "uplink_MB": 209.568352,
+ "handovers_per_device_hour": 71.81333333333333,
+ "outage_share": 0.05962962962962963,
+ "wall_s": 149.12393188476562,
+ "peak_vram_MB": 0.0
+}

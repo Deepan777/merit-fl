@@ -1,0 +1,9 @@
+# Frozen by scripts/v2_freeze.py from the validation calibration. Do not edit by hand.
+data:
+  name: ciciot2023
+fl:
+  lr: 0.003
+  local_epochs: 3
+calibration_set: 3
+provenance: scripts/v2_freeze.py from cal_hfl (validation, seeds 100-102); mean macro_f1_last3
+  0.4619

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+venv/
+.pytest_cache/
+data/5g_nidd/
+data/ciciot2023/
+data/cicids2017/
+data/v2_traces/work_*/
+results/v2/r9_data/
+*.lock

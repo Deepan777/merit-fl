@@ -1,0 +1,234 @@
+provenance: scripts/v2_r8.py cal (validation, traces 100-102 chained, 3 replicates)
+llrd:
+  lag: 120
+  hist: 360
+  m: 200.0
+  chosen:
+    W0:
+      5g_nidd:
+        b01:
+          delta: 0.05
+          h: 11.695247021764184
+          val_rate: 0.0009523809523809524
+          val_contained: 0.9666666666666667
+          feasible: true
+        b1:
+          delta: 0.02
+          h: 9.392661928770137
+          val_rate: 0.0044444444444444444
+          val_contained: 1.0
+          feasible: true
+      ciciot2023:
+        b01:
+          delta: 0.05
+          h: 11.695247021764184
+          val_rate: 0.0007936507936507937
+          val_contained: 0.34444444444444444
+          feasible: true
+        b1:
+          delta: 0.02
+          h: 9.392661928770137
+          val_rate: 0.004761904761904762
+          val_contained: 0.5
+          feasible: true
+      cicids2017:
+        b01:
+          delta: 0.05
+          h: 11.695247021764184
+          val_rate: 0.0004761904761904762
+          val_contained: 0.8111111111111111
+          feasible: true
+        b1:
+          delta: 0.02
+          h: 9.392661928770137
+          val_rate: 0.004126984126984127
+          val_contained: 0.8666666666666667
+          feasible: true
+    W1:
+      5g_nidd:
+        b01:
+          delta: 0.05
+          h: 11.695247021764184
+          val_rate: 0.00015873015873015873
+          val_contained: 0.8666666666666667
+          feasible: true
+        b1:
+          delta: 0.02
+          h: 9.392661928770137
+          val_rate: 0.0007936507936507937
+          val_contained: 0.8666666666666667
+          feasible: true
+      ciciot2023:
+        b01:
+          delta: 0.05
+          h: 11.695247021764184
+          val_rate: 0.0007936507936507937
+          val_contained: 0.3333333333333333
+          feasible: true
+        b1:
+          delta: 0.05
+          h: 9.392661928770137
+          val_rate: 0.005079365079365079
+          val_contained: 0.3888888888888889
+          feasible: true
+      cicids2017:
+        b01:
+          delta: 0.02
+          h: 11.695247021764184
+          val_rate: 0.0004761904761904762
+          val_contained: 0.7666666666666667
+          feasible: true
+        b1:
+          delta: 0.02
+          h: 9.392661928770137
+          val_rate: 0.0020634920634920637
+          val_contained: 0.7777777777777778
+          feasible: true
+    W2:
+      5g_nidd:
+        b01:
+          delta: 0.02
+          h: 11.695247021764184
+          val_rate: 0.00015873015873015873
+          val_contained: 0.8444444444444444
+          feasible: true
+        b1:
+          delta: 0.02
+          h: 9.392661928770137
+          val_rate: 0.0014285714285714286
+          val_contained: 0.8777777777777778
+          feasible: true
+      ciciot2023:
+        b01:
+          delta: 0.05
+          h: 11.695247021764184
+          val_rate: 0.0007936507936507937
+          val_contained: 0.32222222222222224
+          feasible: true
+        b1:
+          delta: 0.02
+          h: 9.392661928770137
+          val_rate: 0.0025396825396825397
+          val_contained: 0.3888888888888889
+          feasible: true
+      cicids2017:
+        b01:
+          delta: 0.02
+          h: 11.695247021764184
+          val_rate: 0.0006349206349206349
+          val_contained: 0.7666666666666667
+          feasible: true
+        b1:
+          delta: 0.02
+          h: 9.392661928770137
+          val_rate: 0.0020634920634920637
+          val_contained: 0.7777777777777778
+          feasible: true
+    W3:
+      5g_nidd:
+        b01:
+          delta: 0.05
+          h: 11.695247021764184
+          val_rate: 0.0007936507936507937
+          val_contained: 0.8666666666666667
+          feasible: true
+        b1:
+          delta: 0.02
+          h: 9.392661928770137
+          val_rate: 0.0019047619047619048
+          val_contained: 0.8777777777777778
+          feasible: true
+      ciciot2023:
+        b01:
+          delta: 0.05
+          h: 11.695247021764184
+          val_rate: 0.0006349206349206349
+          val_contained: 0.3
+          feasible: true
+        b1:
+          delta: 0.05
+          h: 9.392661928770137
+          val_rate: 0.0031746031746031746
+          val_contained: 0.34444444444444444
+          feasible: true
+      cicids2017:
+        b01:
+          delta: 0.05
+          h: 11.695247021764184
+          val_rate: 0.0
+          val_contained: 0.7888888888888889
+          feasible: true
+        b1:
+          delta: 0.05
+          h: 9.392661928770137
+          val_rate: 0.0015873015873015873
+          val_contained: 0.8
+          feasible: true
+    W4:
+      5g_nidd:
+        b01:
+          delta: 0.1
+          h: 11.695247021764184
+          val_rate: 0.21841269841269842
+          val_contained: 0.8444444444444444
+          feasible: false
+        b1:
+          delta: 0.1
+          h: 9.392661928770137
+          val_rate: 0.26746031746031745
+          val_contained: 0.8666666666666667
+          feasible: false
+      ciciot2023:
+        b01:
+          delta: 0.1
+          h: 11.695247021764184
+          val_rate: 0.8322222222222222
+          val_contained: 0.25555555555555554
+          feasible: false
+        b1:
+          delta: 0.1
+          h: 9.392661928770137
+          val_rate: 1.068095238095238
+          val_contained: 0.3111111111111111
+          feasible: false
+      cicids2017:
+        b01:
+          delta: 0.1
+          h: 11.695247021764184
+          val_rate: 0.0025396825396825397
+          val_contained: 0.7555555555555555
+          feasible: false
+        b1:
+          delta: 0.05
+          h: 9.392661928770137
+          val_rate: 0.006825396825396826
+          val_contained: 0.8111111111111111
+          feasible: true
+ablation:
+  5g_nidd:
+    window:
+      delta: 0.05
+      h_val: 2000.0
+      h_theory: 11.695247021764184
+    hourly:
+      delta: 0.05
+      h_val: 8.640981649172186
+      h_theory: 11.695247021764184
+  ciciot2023:
+    window:
+      delta: 0.05
+      h_val: 2000.0
+      h_theory: 11.695247021764184
+    hourly:
+      delta: 0.05
+      h_val: 9.609460868474722
+      h_theory: 11.695247021764184
+  cicids2017:
+    window:
+      delta: 0.02
+      h_val: 2000.0
+      h_theory: 11.695247021764184
+    hourly:
+      delta: 0.02
+      h_val: 8.873543195940439
+      h_theory: 11.695247021764184

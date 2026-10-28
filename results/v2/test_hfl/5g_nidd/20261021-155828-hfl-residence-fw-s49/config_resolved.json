@@ -1,0 +1,58 @@
+{
+ "config": {
+  "seed": 49,
+  "output_dir": "results\\v2\\test_hfl\\5g_nidd",
+  "device": "cpu",
+  "threads": 4,
+  "data": {
+   "name": "5g_nidd",
+   "root": "data",
+   "taxonomy": "family",
+   "cell_profile": "prior_tilt",
+   "cell_spread": 1.5,
+   "cell_concentration": 0.3,
+   "dirichlet_alpha": null
+  },
+  "model": {
+   "name": "cnn_bilstm"
+  },
+  "eval": {
+   "split": "test",
+   "every_rounds": 10
+  },
+  "net": {
+   "n_devices": 150,
+   "edges_per_side": 4,
+   "horizon_s": 3600,
+   "trace_dir": "data/v2_traces"
+  },
+  "fl": {
+   "round_s": 30,
+   "clients_per_edge": 1,
+   "cloud_every": 2,
+   "window": 300,
+   "per_round": 60,
+   "local_epochs": 3,
+   "lr": 0.003,
+   "batch": 256,
+   "clip_norm": 10.0,
+   "staleness_weight": 0.5,
+   "selection": "residence",
+   "forwarding": true,
+   "p_stay_scale_s": 10.0
+  },
+  "energy": {
+   "battery_epochs": [
+    20,
+    200
+   ],
+   "mains": [
+    "veh"
+   ],
+   "j_per_flop": 2e-09,
+   "tx_power_w": 0.2
+  },
+  "calibration_set": 3,
+  "provenance": "scripts/v2_freeze.py from cal_hfl (validation, seeds 100-102); mean macro_f1_last3 0.7359"
+ }
+}

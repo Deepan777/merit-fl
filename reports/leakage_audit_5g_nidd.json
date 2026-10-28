@@ -1,0 +1,1839 @@
+[
+  {
+    "dataset": "5g_nidd",
+    "taxonomy": "family",
+    "classes": [
+      "Benign",
+      "Flood",
+      "HTTP-DoS",
+      "Scan"
+    ],
+    "n_train_used": 217936,
+    "n_val": 31134,
+    "majority_class_accuracy": 0.6715809083317273,
+    "all_features_depth4": {
+      "acc": 0.9992291385623434,
+      "bal_acc": 0.8641507365367913,
+      "macro_f1": 0.9062413704601641
+    },
+    "top_importances": [
+      [
+        "TcpRtt",
+        0.6196768941085894
+      ],
+      [
+        "sMeanPktSz",
+        0.31115081281039425
+      ],
+      [
+        "SrcWin",
+        0.06460727881427346
+      ],
+      [
+        "dMeanPktSz",
+        0.0022196719522729518
+      ],
+      [
+        "DstWin",
+        0.00212698431557691
+      ],
+      [
+        "sDSb=cs0",
+        0.00014850364691368318
+      ],
+      [
+        "DstRate",
+        6.985435197937377e-05
+      ],
+      [
+        "Dur",
+        0.0
+      ],
+      [
+        "sTos",
+        0.0
+      ],
+      [
+        "dTos",
+        0.0
+      ]
+    ],
+    "single_feature_depth3": [
+      {
+        "feature": "Attack Tool",
+        "kind": "dropped",
+        "reason": "copy of the label",
+        "acc": 1.0,
+        "bal_acc": 1.0,
+        "macro_f1": 1.0,
+        "near_perfect": true,
+        "single_class_value_share": 1.0,
+        "distinct_values": 6
+      },
+      {
+        "feature": "dHops",
+        "kind": "dropped",
+        "reason": "host fingerprint (IP time-to-live / hop count): in a testbed with one attacker machine it names the host, not the behaviour",
+        "acc": 0.9505363910837027,
+        "bal_acc": 0.6763160437612672,
+        "macro_f1": 0.6900226090505999,
+        "near_perfect": false
+      },
+      {
+        "feature": "dTtl",
+        "kind": "dropped",
+        "reason": "host fingerprint (IP time-to-live / hop count): in a testbed with one attacker machine it names the host, not the behaviour",
+        "acc": 0.9505363910837027,
+        "bal_acc": 0.6763160437612672,
+        "macro_f1": 0.6900226090505999,
+        "near_perfect": false
+      },
+      {
+        "feature": "sMeanPktSz",
+        "kind": "kept",
+        "acc": 0.9007837091282842,
+        "bal_acc": 0.6402697948128709,
+        "macro_f1": 0.6593869557700693,
+        "near_perfect": false
+      },
+      {
+        "feature": "SrcBytes",
+        "kind": "kept",
+        "acc": 0.9100019271535942,
+        "bal_acc": 0.6153615528000611,
+        "macro_f1": 0.6314100127340498,
+        "near_perfect": false
+      },
+      {
+        "feature": "Unnamed: 0",
+        "kind": "dropped",
+        "reason": "timestamp or capture-order index: encodes when attacks were scheduled in the capture",
+        "acc": 0.8928502601657352,
+        "bal_acc": 0.5867756758657023,
+        "macro_f1": 0.6139143642605988,
+        "near_perfect": false
+      },
+      {
+        "feature": "TotBytes",
+        "kind": "kept",
+        "acc": 0.8681184557075866,
+        "bal_acc": 0.5501081546147324,
+        "macro_f1": 0.586470884314871,
+        "near_perfect": false
+      },
+      {
+        "feature": "sTtl",
+        "kind": "dropped",
+        "reason": "host fingerprint (IP time-to-live / hop count): in a testbed with one attacker machine it names the host, not the behaviour",
+        "acc": 0.8335421686746988,
+        "bal_acc": 0.5637892885510042,
+        "macro_f1": 0.5697130217517764,
+        "near_perfect": false
+      },
+      {
+        "feature": "dMeanPktSz",
+        "kind": "kept",
+        "acc": 0.8020813258816728,
+        "bal_acc": 0.6152702581449152,
+        "macro_f1": 0.5687386112786169,
+        "near_perfect": false
+      },
+      {
+        "feature": "sHops",
+        "kind": "dropped",
+        "reason": "host fingerprint (IP time-to-live / hop count): in a testbed with one attacker machine it names the host, not the behaviour",
+        "acc": 0.8283052208835341,
+        "bal_acc": 0.5556975490752298,
+        "macro_f1": 0.5648196316183798,
+        "near_perfect": false
+      },
+      {
+        "feature": "SrcPkts",
+        "kind": "kept",
+        "acc": 0.803719406436693,
+        "bal_acc": 0.5519228758507568,
+        "macro_f1": 0.5285093865609001,
+        "near_perfect": false
+      },
+      {
+        "feature": "DstPkts",
+        "kind": "kept",
+        "acc": 0.8011177490846021,
+        "bal_acc": 0.5095560297101008,
+        "macro_f1": 0.5110970719381931,
+        "near_perfect": false
+      },
+      {
+        "feature": "TotPkts",
+        "kind": "kept",
+        "acc": 0.7549303012783453,
+        "bal_acc": 0.538691953178758,
+        "macro_f1": 0.5023343000133208,
+        "near_perfect": false
+      },
+      {
+        "feature": "Seq",
+        "kind": "dropped",
+        "reason": "raw sequence/transaction number or checksum: pseudo-random per packet or session",
+        "acc": 0.8020813258816728,
+        "bal_acc": 0.449959830739317,
+        "macro_f1": 0.49822188649424526,
+        "near_perfect": false
+      },
+      {
+        "feature": "SrcLoad",
+        "kind": "kept",
+        "acc": 0.7887197276289587,
+        "bal_acc": 0.4467079155409114,
+        "macro_f1": 0.4886624523267925,
+        "near_perfect": false
+      },
+      {
+        "feature": "DstBytes",
+        "kind": "kept",
+        "acc": 0.8032697372647266,
+        "bal_acc": 0.5113055232226471,
+        "macro_f1": 0.47805725431052437,
+        "near_perfect": false
+      },
+      {
+        "feature": "TcpRtt",
+        "kind": "kept",
+        "acc": 0.8428406243977645,
+        "bal_acc": 0.5136230618536515,
+        "macro_f1": 0.4755022602135556,
+        "near_perfect": false
+      },
+      {
+        "feature": "Label",
+        "kind": "dropped",
+        "reason": "copy of the label",
+        "acc": 0.8336224063724545,
+        "bal_acc": 0.5,
+        "macro_f1": 0.47244563598450995,
+        "near_perfect": false
+      },
+      {
+        "feature": "SrcTCPBase",
+        "kind": "dropped",
+        "reason": "raw sequence/transaction number or checksum: pseudo-random per packet or session",
+        "acc": 0.8298644568638787,
+        "bal_acc": 0.48971583253151185,
+        "macro_f1": 0.436033616207317,
+        "near_perfect": false
+      },
+      {
+        "feature": "dDSb=nan",
+        "kind": "kept",
+        "acc": 0.8094366287659793,
+        "bal_acc": 0.45862526080784793,
+        "macro_f1": 0.4344429734063281,
+        "near_perfect": false
+      },
+      {
+        "feature": "DstTCPBase",
+        "kind": "dropped",
+        "reason": "raw sequence/transaction number or checksum: pseudo-random per packet or session",
+        "acc": 0.8285796878011178,
+        "bal_acc": 0.4878088668568087,
+        "macro_f1": 0.43055839270947127,
+        "near_perfect": false
+      },
+      {
+        "feature": "dDSb=cs0",
+        "kind": "kept",
+        "acc": 0.8094366287659793,
+        "bal_acc": 0.45862526080784793,
+        "macro_f1": 0.42989513823432846,
+        "near_perfect": false
+      },
+      {
+        "feature": "Rate",
+        "kind": "kept",
+        "acc": 0.760005139076251,
+        "bal_acc": 0.42223760047908415,
+        "macro_f1": 0.4290064043130487,
+        "near_perfect": false
+      },
+      {
+        "feature": "AckDat",
+        "kind": "kept",
+        "acc": 0.8367700905762189,
+        "bal_acc": 0.49997608685255157,
+        "macro_f1": 0.42002766884891773,
+        "near_perfect": false
+      },
+      {
+        "feature": "SynAck",
+        "kind": "kept",
+        "acc": 0.826267103488148,
+        "bal_acc": 0.48899050778395464,
+        "macro_f1": 0.4131049140508221,
+        "near_perfect": false
+      },
+      {
+        "feature": "SrcWin",
+        "kind": "kept",
+        "acc": 0.6982719856105865,
+        "bal_acc": 0.3833923262069942,
+        "macro_f1": 0.4065581637284881,
+        "near_perfect": false
+      },
+      {
+        "feature": "SrcRate",
+        "kind": "kept",
+        "acc": 0.745294533307638,
+        "bal_acc": 0.39006827035521074,
+        "macro_f1": 0.404158578912868,
+        "near_perfect": false
+      },
+      {
+        "feature": "Proto=udp",
+        "kind": "kept",
+        "acc": 0.8094045095394103,
+        "bal_acc": 0.45850340136054424,
+        "macro_f1": 0.4038209116657102,
+        "near_perfect": false
+      },
+      {
+        "feature": "Proto=tcp",
+        "kind": "kept",
+        "acc": 0.81171709385238,
+        "bal_acc": 0.4620019436345967,
+        "macro_f1": 0.4007364789320702,
+        "near_perfect": false
+      },
+      {
+        "feature": "State=REQ",
+        "kind": "kept",
+        "acc": 0.7527783130982206,
+        "bal_acc": 0.37283770651117587,
+        "macro_f1": 0.3716975477554124,
+        "near_perfect": false
+      },
+      {
+        "feature": "Dur",
+        "kind": "kept",
+        "acc": 0.7344382347273077,
+        "bal_acc": 0.38495061970601663,
+        "macro_f1": 0.37011103534356926,
+        "near_perfect": false
+      },
+      {
+        "feature": "Offset",
+        "kind": "dropped",
+        "reason": "timestamp or capture-order index: encodes when attacks were scheduled in the capture",
+        "acc": 0.7279822701869338,
+        "bal_acc": 0.37040337521870814,
+        "macro_f1": 0.35780474388552597,
+        "near_perfect": false
+      },
+      {
+        "feature": "Load",
+        "kind": "kept",
+        "acc": 0.7264726665381898,
+        "bal_acc": 0.3446135339124218,
+        "macro_f1": 0.342725170530651,
+        "near_perfect": false
+      },
+      {
+        "feature": "State=INT",
+        "kind": "kept",
+        "acc": 0.7283034624526241,
+        "bal_acc": 0.3358114674441205,
+        "macro_f1": 0.33121842460242384,
+        "near_perfect": false
+      },
+      {
+        "feature": "DstWin",
+        "kind": "kept",
+        "acc": 0.7122759683946811,
+        "bal_acc": 0.3120346425417116,
+        "macro_f1": 0.3156970119496332,
+        "near_perfect": false
+      },
+      {
+        "feature": "DstRate",
+        "kind": "kept",
+        "acc": 0.6982398663840175,
+        "bal_acc": 0.3177488191431832,
+        "macro_f1": 0.3083060043692355,
+        "near_perfect": false
+      },
+      {
+        "feature": "DstLoad",
+        "kind": "kept",
+        "acc": 0.6996852315796236,
+        "bal_acc": 0.2998265218466865,
+        "macro_f1": 0.2875807459353381,
+        "near_perfect": false
+      },
+      {
+        "feature": "Proto=icmp",
+        "kind": "kept",
+        "acc": 0.6877368792959465,
+        "bal_acc": 0.2749256689791873,
+        "macro_f1": 0.24786506903826716,
+        "near_perfect": false
+      },
+      {
+        "feature": "State=ECO",
+        "kind": "kept",
+        "acc": 0.6873514485771183,
+        "bal_acc": 0.27433102081268584,
+        "macro_f1": 0.2468478963271713,
+        "near_perfect": false
+      },
+      {
+        "feature": "sVid",
+        "kind": "dropped",
+        "reason": "network identifier (address/port/flow id): names testbed hosts, not behaviour",
+        "acc": 0.6845249566390441,
+        "bal_acc": 0.2699702675916749,
+        "macro_f1": 0.23943570135957623,
+        "near_perfect": false
+      },
+      {
+        "feature": "sDSb=cs0",
+        "kind": "kept",
+        "acc": 0.6819554185135221,
+        "bal_acc": 0.26600594648166503,
+        "macro_f1": 0.2322221972492027,
+        "near_perfect": false
+      },
+      {
+        "feature": "sTos",
+        "kind": "kept",
+        "acc": 0.681666345474401,
+        "bal_acc": 0.2655599603567889,
+        "macro_f1": 0.23139784635077915,
+        "near_perfect": false
+      },
+      {
+        "feature": "dTos",
+        "kind": "kept",
+        "acc": 0.6808954840367444,
+        "bal_acc": 0.26437066402378595,
+        "macro_f1": 0.22918661964568163,
+        "near_perfect": false
+      },
+      {
+        "feature": "pLoss",
+        "kind": "kept",
+        "acc": 0.680349457185071,
+        "bal_acc": 0.26352824578790884,
+        "macro_f1": 0.2276088229224018,
+        "near_perfect": false
+      },
+      {
+        "feature": "SrcLoss",
+        "kind": "kept",
+        "acc": 0.6774587267938588,
+        "bal_acc": 0.2620761797512189,
+        "macro_f1": 0.22584709340478662,
+        "near_perfect": false
+      },
+      {
+        "feature": "Loss",
+        "kind": "kept",
+        "acc": 0.6730262735273335,
+        "bal_acc": 0.2597118212144078,
+        "macro_f1": 0.22290861527335187,
+        "near_perfect": false
+      },
+      {
+        "feature": "Proto=sctp",
+        "kind": "kept",
+        "acc": 0.6787113766300508,
+        "bal_acc": 0.2610009910802775,
+        "macro_f1": 0.22281715234006422,
+        "near_perfect": false
+      },
+      {
+        "feature": "sDSb=ef",
+        "kind": "kept",
+        "acc": 0.6770411768484614,
+        "bal_acc": 0.25842418235877107,
+        "macro_f1": 0.21783943745343534,
+        "near_perfect": false
+      },
+      {
+        "feature": "dDSb=ef",
+        "kind": "kept",
+        "acc": 0.6765272692233572,
+        "bal_acc": 0.2576313181367691,
+        "macro_f1": 0.21628869578158483,
+        "near_perfect": false
+      },
+      {
+        "feature": "State=TST",
+        "kind": "kept",
+        "acc": 0.6716130275582964,
+        "bal_acc": 0.2571428571428571,
+        "macro_f1": 0.21477471187801306,
+        "near_perfect": false
+      },
+      {
+        "feature": "dVid",
+        "kind": "dropped",
+        "reason": "network identifier (address/port/flow id): names testbed hosts, not behaviour",
+        "acc": 0.6749534271214749,
+        "bal_acc": 0.25520317145688803,
+        "macro_f1": 0.21148224899964743,
+        "near_perfect": false
+      },
+      {
+        "feature": "dDSb=af11",
+        "kind": "kept",
+        "acc": 0.6743431618166634,
+        "bal_acc": 0.25426164519326067,
+        "macro_f1": 0.20959489847246254,
+        "near_perfect": false
+      },
+      {
+        "feature": "State=ACC",
+        "kind": "kept",
+        "acc": 0.6735080619258689,
+        "bal_acc": 0.25297324083250744,
+        "macro_f1": 0.2069904172506634,
+        "near_perfect": false
+      },
+      {
+        "feature": "sDSb=af41",
+        "kind": "kept",
+        "acc": 0.6733474657930237,
+        "bal_acc": 0.2527254707631318,
+        "macro_f1": 0.20648664020505486,
+        "near_perfect": false
+      },
+      {
+        "feature": "sDSb=af11",
+        "kind": "kept",
+        "acc": 0.6732511081133167,
+        "bal_acc": 0.25257680872150645,
+        "macro_f1": 0.2061839195565333,
+        "near_perfect": false
+      },
+      {
+        "feature": "dDSb=af12",
+        "kind": "kept",
+        "acc": 0.6730583927539024,
+        "bal_acc": 0.2522794846382557,
+        "macro_f1": 0.2055774529880766,
+        "near_perfect": false
+      },
+      {
+        "feature": "sDSb=cs7",
+        "kind": "kept",
+        "acc": 0.6720948159568317,
+        "bal_acc": 0.250792864222002,
+        "macro_f1": 0.2025244560236565,
+        "near_perfect": false
+      },
+      {
+        "feature": "State=URP",
+        "kind": "kept",
+        "acc": 0.6719663390505557,
+        "bal_acc": 0.2505946481665015,
+        "macro_f1": 0.20211476694274003,
+        "near_perfect": false
+      },
+      {
+        "feature": "sDSb=nan",
+        "kind": "kept",
+        "acc": 0.6718699813708486,
+        "bal_acc": 0.2504459861248761,
+        "macro_f1": 0.20180709216048032,
+        "near_perfect": false
+      },
+      {
+        "feature": "sDSb=cs6",
+        "kind": "kept",
+        "acc": 0.6718057429177106,
+        "bal_acc": 0.25034687809712586,
+        "macro_f1": 0.20160178101925538,
+        "near_perfect": false
+      },
+      {
+        "feature": "Proto=llc",
+        "kind": "kept",
+        "acc": 0.6717415044645725,
+        "bal_acc": 0.2502477700693756,
+        "macro_f1": 0.20139631396553698,
+        "near_perfect": false
+      },
+      {
+        "feature": "State=RSP",
+        "kind": "kept",
+        "acc": 0.6717415044645725,
+        "bal_acc": 0.2502477700693756,
+        "macro_f1": 0.20139631396553698,
+        "near_perfect": false
+      },
+      {
+        "feature": "Proto=arp",
+        "kind": "kept",
+        "acc": 0.6717093852380035,
+        "bal_acc": 0.2501982160555005,
+        "macro_f1": 0.20129352191335118,
+        "near_perfect": false
+      },
+      {
+        "feature": "sDSb=4",
+        "kind": "kept",
+        "acc": 0.6717093852380035,
+        "bal_acc": 0.2501982160555005,
+        "macro_f1": 0.20129352191335118,
+        "near_perfect": false
+      },
+      {
+        "feature": "sDSb=52",
+        "kind": "kept",
+        "acc": 0.6717093852380035,
+        "bal_acc": 0.2501982160555005,
+        "macro_f1": 0.20129352191335118,
+        "near_perfect": false
+      },
+      {
+        "feature": "sDSb=af12",
+        "kind": "kept",
+        "acc": 0.6717093852380035,
+        "bal_acc": 0.2501982160555005,
+        "macro_f1": 0.20129352191335118,
+        "near_perfect": false
+      },
+      {
+        "feature": "dDSb=cs1",
+        "kind": "kept",
+        "acc": 0.6717093852380035,
+        "bal_acc": 0.2501982160555005,
+        "macro_f1": 0.20129352191335118,
+        "near_perfect": false
+      },
+      {
+        "feature": "Cause=Shutdown",
+        "kind": "kept",
+        "acc": 0.6717093852380035,
+        "bal_acc": 0.2501982160555005,
+        "macro_f1": 0.20129352191335118,
+        "near_perfect": false
+      },
+      {
+        "feature": "DstLoss",
+        "kind": "kept",
+        "acc": 0.6716772660114344,
+        "bal_acc": 0.25018625948177625,
+        "macro_f1": 0.20128769570142763,
+        "near_perfect": false
+      },
+      {
+        "feature": "SrcGap",
+        "kind": "kept",
+        "acc": 0.6716130275582964,
+        "bal_acc": 0.25004955401387513,
+        "macro_f1": 0.20098491137596522,
+        "near_perfect": false
+      },
+      {
+        "feature": "DstGap",
+        "kind": "kept",
+        "acc": 0.6716130275582964,
+        "bal_acc": 0.25004955401387513,
+        "macro_f1": 0.20098491137596522,
+        "near_perfect": false
+      },
+      {
+        "feature": "Proto=ipv6-icmp",
+        "kind": "kept",
+        "acc": 0.6716130275582964,
+        "bal_acc": 0.25004955401387513,
+        "macro_f1": 0.20098491137596522,
+        "near_perfect": false
+      },
+      {
+        "feature": "sDSb=cs4",
+        "kind": "kept",
+        "acc": 0.6716130275582964,
+        "bal_acc": 0.25004955401387513,
+        "macro_f1": 0.20098491137596522,
+        "near_perfect": false
+      },
+      {
+        "feature": "sDSb=54",
+        "kind": "kept",
+        "acc": 0.6715809083317273,
+        "bal_acc": 0.25,
+        "macro_f1": 0.20088196299214112,
+        "near_perfect": false
+      },
+      {
+        "feature": "dDSb=cs4",
+        "kind": "kept",
+        "acc": 0.6715809083317273,
+        "bal_acc": 0.25,
+        "macro_f1": 0.20088196299214112,
+        "near_perfect": false
+      },
+      {
+        "feature": "Cause=Start",
+        "kind": "kept",
+        "acc": 0.6715809083317273,
+        "bal_acc": 0.25,
+        "macro_f1": 0.20088196299214112,
+        "near_perfect": false
+      },
+      {
+        "feature": "Cause=Status",
+        "kind": "kept",
+        "acc": 0.6715809083317273,
+        "bal_acc": 0.25,
+        "macro_f1": 0.20088196299214112,
+        "near_perfect": false
+      },
+      {
+        "feature": "State=CON",
+        "kind": "kept",
+        "acc": 0.6715809083317273,
+        "bal_acc": 0.25,
+        "macro_f1": 0.20088196299214112,
+        "near_perfect": false
+      },
+      {
+        "feature": "State=FIN",
+        "kind": "kept",
+        "acc": 0.6715809083317273,
+        "bal_acc": 0.25,
+        "macro_f1": 0.20088196299214112,
+        "near_perfect": false
+      },
+      {
+        "feature": "State=RST",
+        "kind": "kept",
+        "acc": 0.6715809083317273,
+        "bal_acc": 0.25,
+        "macro_f1": 0.20088196299214112,
+        "near_perfect": false
+      }
+    ],
+    "investigations": {
+      "Attack Tool": {
+        "kind": "dropped",
+        "alone": {
+          "3": {
+            "acc": 1.0,
+            "bal_acc": 1.0,
+            "macro_f1": 1.0
+          },
+          "10": {
+            "acc": 1.0,
+            "bal_acc": 1.0,
+            "macro_f1": 1.0
+          },
+          "None": {
+            "acc": 1.0,
+            "bal_acc": 1.0,
+            "macro_f1": 1.0
+          }
+        },
+        "without": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641507365367913,
+            "macro_f1": 0.9062413704601641
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856041842617689,
+            "macro_f1": 0.9855853927648013
+          }
+        },
+        "with": {
+          "4": {
+            "acc": 1.0,
+            "bal_acc": 1.0,
+            "macro_f1": 1.0
+          },
+          "None": {
+            "acc": 1.0,
+            "bal_acc": 1.0,
+            "macro_f1": 1.0
+          }
+        },
+        "single_class_value_share": 1.0,
+        "distinct_values": 6,
+        "class_bands": {
+          "Benign": {
+            "n": 35316,
+            "q01": 0.0,
+            "q50": 0.0,
+            "q99": 0.0,
+            "top3_values": [
+              0.0
+            ],
+            "top3_share": 1.0
+          },
+          "Flood": {
+            "n": 36011,
+            "q01": 2.0,
+            "q50": 2.0,
+            "q99": 2.0,
+            "top3_values": [
+              2.0
+            ],
+            "top3_share": 1.0
+          },
+          "HTTP-DoS": {
+            "n": 146361,
+            "q01": 3.0,
+            "q50": 3.0,
+            "q99": 5.0,
+            "top3_values": [
+              3.0,
+              5.0,
+              4.0
+            ],
+            "top3_share": 1.0
+          },
+          "Scan": {
+            "n": 248,
+            "q01": 1.0,
+            "q50": 1.0,
+            "q99": 1.0,
+            "top3_values": [
+              1.0
+            ],
+            "top3_share": 1.0
+          }
+        }
+      },
+      "dHops": {
+        "kind": "dropped",
+        "alone": {
+          "3": {
+            "acc": 0.9505363910837027,
+            "bal_acc": 0.6763160437612672,
+            "macro_f1": 0.6900226090505999
+          },
+          "10": {
+            "acc": 0.9505363910837027,
+            "bal_acc": 0.6763160437612672,
+            "macro_f1": 0.6900226090505999
+          },
+          "None": {
+            "acc": 0.9505363910837027,
+            "bal_acc": 0.6763160437612672,
+            "macro_f1": 0.6900226090505999
+          }
+        },
+        "without": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641507365367913,
+            "macro_f1": 0.9062413704601641
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856041842617689,
+            "macro_f1": 0.9855853927648013
+          }
+        },
+        "with": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.864151699685749,
+            "macro_f1": 0.9062235653453742
+          },
+          "None": {
+            "acc": 0.9997751654140168,
+            "bal_acc": 0.9855060393829764,
+            "macro_f1": 0.9789886868278103
+          }
+        },
+        "single_class_value_share": 0.14018335658174877,
+        "distinct_values": 27,
+        "class_bands": {
+          "Benign": {
+            "n": 35316,
+            "q01": -1.0,
+            "q50": 0.0,
+            "q99": 11.0,
+            "top3_values": [
+              0.0,
+              1.0,
+              -1.0
+            ],
+            "top3_share": 0.7988447162759089
+          },
+          "Flood": {
+            "n": 36011,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": 5.0,
+            "top3_values": [
+              -1.0,
+              5.0
+            ],
+            "top3_share": 1.0
+          },
+          "HTTP-DoS": {
+            "n": 146361,
+            "q01": 5.0,
+            "q50": 5.0,
+            "q99": 5.0,
+            "top3_values": [
+              5.0,
+              -1.0
+            ],
+            "top3_share": 1.0
+          },
+          "Scan": {
+            "n": 248,
+            "q01": -1.0,
+            "q50": 5.0,
+            "q99": 5.0,
+            "top3_values": [
+              5.0,
+              -1.0
+            ],
+            "top3_share": 1.0
+          }
+        }
+      },
+      "dTtl": {
+        "kind": "dropped",
+        "alone": {
+          "3": {
+            "acc": 0.9505363910837027,
+            "bal_acc": 0.6763160437612672,
+            "macro_f1": 0.6900226090505999
+          },
+          "10": {
+            "acc": 0.9505363910837027,
+            "bal_acc": 0.6763160437612672,
+            "macro_f1": 0.6900226090505999
+          },
+          "None": {
+            "acc": 0.9505363910837027,
+            "bal_acc": 0.6763160437612672,
+            "macro_f1": 0.6900226090505999
+          }
+        },
+        "without": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641507365367913,
+            "macro_f1": 0.9062413704601641
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856041842617689,
+            "macro_f1": 0.9855853927648013
+          }
+        },
+        "with": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.864151699685749,
+            "macro_f1": 0.9062235653453742
+          },
+          "None": {
+            "acc": 0.9997751654140168,
+            "bal_acc": 0.9855060393829764,
+            "macro_f1": 0.9789886868278103
+          }
+        },
+        "single_class_value_share": 0.14018335658174877,
+        "distinct_values": 34,
+        "class_bands": {
+          "Benign": {
+            "n": 35316,
+            "q01": -1.0,
+            "q50": 0.0,
+            "q99": 15.0,
+            "top3_values": [
+              0.0,
+              2.0,
+              -1.0
+            ],
+            "top3_share": 0.7133876996262317
+          },
+          "Flood": {
+            "n": 36011,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": 6.0,
+            "top3_values": [
+              -1.0,
+              6.0
+            ],
+            "top3_share": 1.0
+          },
+          "HTTP-DoS": {
+            "n": 146361,
+            "q01": 6.0,
+            "q50": 6.0,
+            "q99": 6.0,
+            "top3_values": [
+              6.0,
+              -1.0
+            ],
+            "top3_share": 1.0
+          },
+          "Scan": {
+            "n": 248,
+            "q01": -1.0,
+            "q50": 6.0,
+            "q99": 6.0,
+            "top3_values": [
+              6.0,
+              -1.0
+            ],
+            "top3_share": 1.0
+          }
+        }
+      },
+      "Unnamed: 0": {
+        "kind": "dropped",
+        "alone": {
+          "3": {
+            "acc": 0.8928502601657352,
+            "bal_acc": 0.5867756758657023,
+            "macro_f1": 0.6139143642605988
+          },
+          "10": {
+            "acc": 0.9725701805100533,
+            "bal_acc": 0.752166851945152,
+            "macro_f1": 0.779243927057321
+          },
+          "None": {
+            "acc": 0.9693261386265819,
+            "bal_acc": 0.7862329735598582,
+            "macro_f1": 0.7987825518473305
+          }
+        },
+        "without": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641507365367913,
+            "macro_f1": 0.9062413704601641
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856041842617689,
+            "macro_f1": 0.9855853927648013
+          }
+        },
+        "with": {
+          "4": {
+            "acc": 0.9992933770154815,
+            "bal_acc": 0.8997173233584094,
+            "macro_f1": 0.9368345839881986
+          },
+          "None": {
+            "acc": 0.999871523093724,
+            "bal_acc": 0.9927836756958193,
+            "macro_f1": 0.9962597879178863
+          }
+        },
+        "single_class_value_share": 0.9982838998605095,
+        "distinct_values": 216537,
+        "class_bands": {
+          "Benign": {
+            "n": 35316,
+            "q01": 4424.45,
+            "q50": 452047.0,
+            "q99": 727431.85,
+            "top3_values": [
+              13764.0,
+              16042.0,
+              16031.0
+            ],
+            "top3_share": 0.00016989466530750936
+          },
+          "Flood": {
+            "n": 36011,
+            "q01": 37297.8,
+            "q50": 142441.0,
+            "q99": 547754.0000000002,
+            "top3_values": [
+              37129.0,
+              36766.0,
+              36536.0
+            ],
+            "top3_share": 0.00016661575629668712
+          },
+          "HTTP-DoS": {
+            "n": 146361,
+            "q01": 358219.6,
+            "q50": 569995.0,
+            "q99": 720375.4,
+            "top3_values": [
+              355627.0,
+              355629.0,
+              355632.0
+            ],
+            "top3_share": 2.0497263615307355e-05
+          },
+          "Scan": {
+            "n": 248,
+            "q01": 55.47,
+            "q50": 15227.5,
+            "q99": 30797.65,
+            "top3_values": [
+              42.0,
+              47.0,
+              55.0
+            ],
+            "top3_share": 0.012096774193548387
+          }
+        }
+      },
+      "Seq": {
+        "kind": "dropped",
+        "alone": {
+          "3": {
+            "acc": 0.8020813258816728,
+            "bal_acc": 0.449959830739317,
+            "macro_f1": 0.49822188649424526
+          },
+          "10": {
+            "acc": 0.8109462324147234,
+            "bal_acc": 0.4695135662814818,
+            "macro_f1": 0.5147003564984336
+          },
+          "None": {
+            "acc": 0.7663005074837798,
+            "bal_acc": 0.4759818196583144,
+            "macro_f1": 0.49364438583171777
+          }
+        },
+        "without": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641507365367913,
+            "macro_f1": 0.9062413704601641
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856041842617689,
+            "macro_f1": 0.9855853927648013
+          }
+        },
+        "with": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641507365367913,
+            "macro_f1": 0.9062409533908155
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856032211128112,
+            "macro_f1": 0.9889950771095182
+          }
+        },
+        "single_class_value_share": 0.3511764921811908,
+        "distinct_values": 46549,
+        "class_bands": {
+          "Benign": {
+            "n": 35316,
+            "q01": 1.0,
+            "q50": 420.0,
+            "q99": 134766.94999999998,
+            "top3_values": [
+              6.0,
+              7.0,
+              2.0
+            ],
+            "top3_share": 0.08644806886397101
+          },
+          "Flood": {
+            "n": 36011,
+            "q01": 2022.0,
+            "q50": 24205.0,
+            "q99": 65557.5,
+            "top3_values": [
+              3122.0,
+              2980.0,
+              6000.0
+            ],
+            "top3_share": 0.0004165393907417178
+          },
+          "HTTP-DoS": {
+            "n": 146361,
+            "q01": 569.0,
+            "q50": 9911.0,
+            "q99": 36462.0,
+            "top3_values": [
+              2340.0,
+              1445.0,
+              2569.0
+            ],
+            "top3_share": 0.0003894480086908398
+          },
+          "Scan": {
+            "n": 248,
+            "q01": 44.47,
+            "q50": 4340.5,
+            "q99": 10512.67,
+            "top3_values": [
+              47.0,
+              57.0,
+              135.0
+            ],
+            "top3_share": 0.024193548387096774
+          }
+        }
+      },
+      "TcpRtt": {
+        "kind": "kept (dominant or flagged)",
+        "alone": {
+          "3": {
+            "acc": 0.8428406243977645,
+            "bal_acc": 0.5136230618536515,
+            "macro_f1": 0.4755022602135556
+          },
+          "10": {
+            "acc": 0.8449926125778892,
+            "bal_acc": 0.5173191551847937,
+            "macro_f1": 0.4776205640866481
+          },
+          "None": {
+            "acc": 0.8485257275004818,
+            "bal_acc": 0.5243491891973947,
+            "macro_f1": 0.4813500095161256
+          }
+        },
+        "without": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641131390966406,
+            "macro_f1": 0.9062229869259067
+          },
+          "None": {
+            "acc": 0.999871523093724,
+            "bal_acc": 0.9856161408354931,
+            "macro_f1": 0.9856161408354931
+          }
+        },
+        "with": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641507365367913,
+            "macro_f1": 0.9062413704601641
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856041842617689,
+            "macro_f1": 0.9855853927648013
+          }
+        },
+        "single_class_value_share": 0.6125055062036561,
+        "distinct_values": 18349,
+        "class_bands": {
+          "Benign": {
+            "n": 35316,
+            "q01": -6.293129801993036e-10,
+            "q50": -6.293129801993036e-10,
+            "q99": 0.06105490109139787,
+            "top3_values": [
+              -6.293129801993036e-10,
+              0.038956000656728024,
+              0.048904003027883024
+            ],
+            "top3_share": 0.8994223581379545
+          },
+          "Flood": {
+            "n": 36011,
+            "q01": -6.293129801993036e-10,
+            "q50": -6.293129801993036e-10,
+            "q99": 0.0024629996487497818,
+            "top3_values": [
+              -6.293129801993036e-10,
+              0.0022409999626400376,
+              0.002169999722669725
+            ],
+            "top3_share": 0.8390491794174002
+          },
+          "HTTP-DoS": {
+            "n": 146361,
+            "q01": 0.013093000366592583,
+            "q50": 0.02094800017040511,
+            "q99": 0.07798500174823714,
+            "top3_values": [
+              0.013996000459558747,
+              0.013996999781578263,
+              0.013992999729123932
+            ],
+            "top3_share": 0.006647945832564686
+          },
+          "Scan": {
+            "n": 248,
+            "q01": -6.293129801993036e-10,
+            "q50": -6.293129801993036e-10,
+            "q99": 0.021498569620149455,
+            "top3_values": [
+              -6.293129801993036e-10,
+              0.0014310008588723881,
+              0.0014419993905689758
+            ],
+            "top3_share": 0.7620967741935484
+          }
+        }
+      },
+      "Label": {
+        "kind": "dropped",
+        "alone": {
+          "3": {
+            "acc": 0.8336224063724545,
+            "bal_acc": 0.5,
+            "macro_f1": 0.47244563598450995
+          },
+          "10": {
+            "acc": 0.8336224063724545,
+            "bal_acc": 0.5,
+            "macro_f1": 0.47244563598450995
+          },
+          "None": {
+            "acc": 0.8336224063724545,
+            "bal_acc": 0.5,
+            "macro_f1": 0.47244563598450995
+          }
+        },
+        "without": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641507365367913,
+            "macro_f1": 0.9062413704601641
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856041842617689,
+            "macro_f1": 0.9855853927648013
+          }
+        },
+        "with": {
+          "4": {
+            "acc": 0.9998072846405859,
+            "bal_acc": 0.9642737577119901,
+            "macro_f1": 0.9806358560313493
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856051474107268,
+            "macro_f1": 0.9856051474107268
+          }
+        },
+        "single_class_value_share": 0.16204757359958888,
+        "distinct_values": 2,
+        "class_bands": {
+          "Benign": {
+            "n": 35316,
+            "q01": 0.0,
+            "q50": 0.0,
+            "q99": 0.0,
+            "top3_values": [
+              0.0
+            ],
+            "top3_share": 1.0
+          },
+          "Flood": {
+            "n": 36011,
+            "q01": 1.0,
+            "q50": 1.0,
+            "q99": 1.0,
+            "top3_values": [
+              1.0
+            ],
+            "top3_share": 1.0
+          },
+          "HTTP-DoS": {
+            "n": 146361,
+            "q01": 1.0,
+            "q50": 1.0,
+            "q99": 1.0,
+            "top3_values": [
+              1.0
+            ],
+            "top3_share": 1.0
+          },
+          "Scan": {
+            "n": 248,
+            "q01": 1.0,
+            "q50": 1.0,
+            "q99": 1.0,
+            "top3_values": [
+              1.0
+            ],
+            "top3_share": 1.0
+          }
+        }
+      },
+      "SrcTCPBase": {
+        "kind": "dropped",
+        "alone": {
+          "3": {
+            "acc": 0.8298644568638787,
+            "bal_acc": 0.48971583253151185,
+            "macro_f1": 0.436033616207317
+          },
+          "10": {
+            "acc": 0.8651956060898054,
+            "bal_acc": 0.7141130774125442,
+            "macro_f1": 0.6949674288728316
+          },
+          "None": {
+            "acc": 0.8664161366994283,
+            "bal_acc": 0.7243272245160877,
+            "macro_f1": 0.709400316859798
+          }
+        },
+        "without": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641507365367913,
+            "macro_f1": 0.9062413704601641
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856041842617689,
+            "macro_f1": 0.9855853927648013
+          }
+        },
+        "with": {
+          "4": {
+            "acc": 0.9991970193357744,
+            "bal_acc": 0.8641011825229163,
+            "macro_f1": 0.9061923117798685
+          },
+          "None": {
+            "acc": 0.9998072846405859,
+            "bal_acc": 0.9855546302478939,
+            "macro_f1": 0.9855363200418623
+          }
+        },
+        "single_class_value_share": 0.733862234784524,
+        "distinct_values": 136096,
+        "class_bands": {
+          "Benign": {
+            "n": 35316,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": 173257.7,
+            "top3_values": [
+              -1.0,
+              165677.0,
+              11725.0
+            ],
+            "top3_share": 0.7888492468003171
+          },
+          "Flood": {
+            "n": 36011,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": 121250.9,
+            "top3_values": [
+              -1.0,
+              11658.0,
+              11659.0
+            ],
+            "top3_share": 0.8364110966093694
+          },
+          "HTTP-DoS": {
+            "n": 146361,
+            "q01": 19293.4,
+            "q50": 99558.0,
+            "q99": 201235.4,
+            "top3_values": [
+              157618.0,
+              157614.0,
+              157612.0
+            ],
+            "top3_share": 6.149179084592207e-05
+          },
+          "Scan": {
+            "n": 248,
+            "q01": -1.0,
+            "q50": 6583.5,
+            "q99": 115429.12,
+            "top3_values": [
+              -1.0,
+              2.0,
+              4.0
+            ],
+            "top3_share": 0.1532258064516129
+          }
+        }
+      },
+      "DstTCPBase": {
+        "kind": "dropped",
+        "alone": {
+          "3": {
+            "acc": 0.8285796878011178,
+            "bal_acc": 0.4878088668568087,
+            "macro_f1": 0.43055839270947127
+          },
+          "10": {
+            "acc": 0.8562664611036166,
+            "bal_acc": 0.5443624770448302,
+            "macro_f1": 0.505173874783616
+          },
+          "None": {
+            "acc": 0.8574548724866705,
+            "bal_acc": 0.5752748364655857,
+            "macro_f1": 0.5560221165656445
+          }
+        },
+        "without": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641507365367913,
+            "macro_f1": 0.9062413704601641
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856041842617689,
+            "macro_f1": 0.9855853927648013
+          }
+        },
+        "with": {
+          "4": {
+            "acc": 0.9991970193357744,
+            "bal_acc": 0.8641011825229163,
+            "macro_f1": 0.9061923117798685
+          },
+          "None": {
+            "acc": 0.9997751654140168,
+            "bal_acc": 0.9855060393829764,
+            "macro_f1": 0.9789886868278103
+          }
+        },
+        "single_class_value_share": 0.723074664121577,
+        "distinct_values": 109525,
+        "class_bands": {
+          "Benign": {
+            "n": 35316,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": 124677.85,
+            "top3_values": [
+              -1.0,
+              54474.0,
+              70892.0
+            ],
+            "top3_share": 0.8486238532110092
+          },
+          "Flood": {
+            "n": 36011,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": 76590.9,
+            "top3_values": [
+              -1.0,
+              1320.0,
+              1321.0
+            ],
+            "top3_share": 0.8379939462941879
+          },
+          "HTTP-DoS": {
+            "n": 146361,
+            "q01": 7303.0,
+            "q50": 68930.0,
+            "q99": 134494.8,
+            "top3_values": [
+              -1.0,
+              127905.0,
+              127801.0
+            ],
+            "top3_share": 0.00027329684820409807
+          },
+          "Scan": {
+            "n": 248,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": 70943.71,
+            "top3_values": [
+              -1.0,
+              1.0,
+              2.0
+            ],
+            "top3_share": 0.7620967741935484
+          }
+        }
+      },
+      "Offset": {
+        "kind": "dropped",
+        "alone": {
+          "3": {
+            "acc": 0.7279822701869338,
+            "bal_acc": 0.37040337521870814,
+            "macro_f1": 0.35780474388552597
+          },
+          "10": {
+            "acc": 0.7284319393589003,
+            "bal_acc": 0.365756368613618,
+            "macro_f1": 0.3560966221327124
+          },
+          "None": {
+            "acc": 0.5528040084794759,
+            "bal_acc": 0.3105333312340749,
+            "macro_f1": 0.3105842767023129
+          }
+        },
+        "without": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641507365367913,
+            "macro_f1": 0.9062413704601641
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856041842617689,
+            "macro_f1": 0.9855853927648013
+          }
+        },
+        "with": {
+          "4": {
+            "acc": 0.9991970193357744,
+            "bal_acc": 0.8641011825229163,
+            "macro_f1": 0.9061918900049439
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9785099179838291,
+            "macro_f1": 0.9886528030107665
+          }
+        },
+        "single_class_value_share": 0.9716705821892666,
+        "distinct_values": 211700,
+        "class_bands": {
+          "Benign": {
+            "n": 35316,
+            "q01": 4719.000000000001,
+            "q50": 1036390.0,
+            "q99": 39600208.4,
+            "top3_values": [
+              232.0,
+              128.0,
+              336.0
+            ],
+            "top3_share": 0.0005663155510250311
+          },
+          "Flood": {
+            "n": 36011,
+            "q01": 353790.4,
+            "q50": 5431912.0,
+            "q99": 13760992.0,
+            "top3_values": [
+              4537484.0,
+              4359728.0,
+              4202192.0
+            ],
+            "top3_share": 0.00016661575629668712
+          },
+          "HTTP-DoS": {
+            "n": 146361,
+            "q01": 224232.80000000002,
+            "q50": 5390892.0,
+            "q99": 15709849.599999998,
+            "top3_values": [
+              618912.0,
+              690232.0,
+              1104168.0
+            ],
+            "top3_share": 6.149179084592207e-05
+          },
+          "Scan": {
+            "n": 248,
+            "q01": 6041.12,
+            "q50": 459530.0,
+            "q99": 1080325.84,
+            "top3_values": [
+              4600.0,
+              5084.0,
+              5996.0
+            ],
+            "top3_share": 0.012096774193548387
+          }
+        }
+      },
+      "sVid": {
+        "kind": "dropped",
+        "alone": {
+          "3": {
+            "acc": 0.6845249566390441,
+            "bal_acc": 0.2699702675916749,
+            "macro_f1": 0.23943570135957623
+          },
+          "10": {
+            "acc": 0.6845249566390441,
+            "bal_acc": 0.2699702675916749,
+            "macro_f1": 0.23943570135957623
+          },
+          "None": {
+            "acc": 0.6845249566390441,
+            "bal_acc": 0.2699702675916749,
+            "macro_f1": 0.23943570135957623
+          }
+        },
+        "without": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641507365367913,
+            "macro_f1": 0.9062413704601641
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856041842617689,
+            "macro_f1": 0.9855853927648013
+          }
+        },
+        "with": {
+          "4": {
+            "acc": 0.9991970193357744,
+            "bal_acc": 0.8641011825229163,
+            "macro_f1": 0.9061923117798685
+          },
+          "None": {
+            "acc": 0.9998072846405859,
+            "bal_acc": 0.9855546302478939,
+            "macro_f1": 0.9822406888746903
+          }
+        },
+        "single_class_value_share": 0.013421371411790617,
+        "distinct_values": 2,
+        "class_bands": {
+          "Benign": {
+            "n": 35316,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": 0.0,
+            "top3_values": [
+              -1.0,
+              0.0
+            ],
+            "top3_share": 1.0
+          },
+          "Flood": {
+            "n": 36011,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": -1.0,
+            "top3_values": [
+              -1.0
+            ],
+            "top3_share": 1.0
+          },
+          "HTTP-DoS": {
+            "n": 146361,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": -1.0,
+            "top3_values": [
+              -1.0
+            ],
+            "top3_share": 1.0
+          },
+          "Scan": {
+            "n": 248,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": -1.0,
+            "top3_values": [
+              -1.0
+            ],
+            "top3_share": 1.0
+          }
+        }
+      },
+      "dVid": {
+        "kind": "dropped",
+        "alone": {
+          "3": {
+            "acc": 0.6749534271214749,
+            "bal_acc": 0.25520317145688803,
+            "macro_f1": 0.21148224899964743
+          },
+          "10": {
+            "acc": 0.6749534271214749,
+            "bal_acc": 0.25520317145688803,
+            "macro_f1": 0.21148224899964743
+          },
+          "None": {
+            "acc": 0.6749534271214749,
+            "bal_acc": 0.25520317145688803,
+            "macro_f1": 0.21148224899964743
+          }
+        },
+        "without": {
+          "4": {
+            "acc": 0.9992291385623434,
+            "bal_acc": 0.8641507365367913,
+            "macro_f1": 0.9062413704601641
+          },
+          "None": {
+            "acc": 0.9998394038671549,
+            "bal_acc": 0.9856041842617689,
+            "macro_f1": 0.9855853927648013
+          }
+        },
+        "with": {
+          "4": {
+            "acc": 0.9991970193357744,
+            "bal_acc": 0.8641011825229163,
+            "macro_f1": 0.9061923117798685
+          },
+          "None": {
+            "acc": 0.9998072846405859,
+            "bal_acc": 0.9855546302478939,
+            "macro_f1": 0.9855546302478939
+          }
+        },
+        "single_class_value_share": 0.003202775126642684,
+        "distinct_values": 2,
+        "class_bands": {
+          "Benign": {
+            "n": 35316,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": 0.0,
+            "top3_values": [
+              -1.0,
+              0.0
+            ],
+            "top3_share": 1.0
+          },
+          "Flood": {
+            "n": 36011,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": -1.0,
+            "top3_values": [
+              -1.0
+            ],
+            "top3_share": 1.0
+          },
+          "HTTP-DoS": {
+            "n": 146361,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": -1.0,
+            "top3_values": [
+              -1.0
+            ],
+            "top3_share": 1.0
+          },
+          "Scan": {
+            "n": 248,
+            "q01": -1.0,
+            "q50": -1.0,
+            "q99": -1.0,
+            "top3_values": [
+              -1.0
+            ],
+            "top3_share": 1.0
+          }
+        }
+      }
+    }
+  }
+]
