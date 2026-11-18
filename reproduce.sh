@@ -56,3 +56,13 @@ $PY scripts/v2_r9.py sweep
 $PY scripts/v2_r9.py replay
 $PY scripts/v2_r9.py replaycurves && $PY scripts/v2_r9.py replaycurves --share 0.2
 $PY scripts/v2_r9_analyze.py                       # reports/stats/V2_R9.md
+
+# Real street network, second testbed and calibration transfer (R10)
+$PY scripts/v2_traces_osm.py map && $PY scripts/v2_traces_osm.py net   # OpenStreetMap extract (needs network access)
+$PY scripts/v2_traces_osm.py traces --seeds 62 63 64 65 66 67 68 69 70 71
+$PY scripts/v2_r10.py main && $PY scripts/v2_r10.py rates          # real-map evaluation
+$PY scripts/v2_r10.py split                                       # 5G-NIDD session halves
+$PY scripts/v2_r10.py hostprep && $PY scripts/v2_r10.py hostflags  # CICIDS2017 hosts (GeneratedLabelledFlows.zip)
+$PY scripts/v2_r10.py hostdescribe && $PY scripts/v2_r10.py hostreplay
+$PY scripts/v2_r10.py hostdays && $PY scripts/v2_r10.py hostdays_seen
+$PY scripts/v2_r10_analyze.py                      # reports/stats/V2_R10.md

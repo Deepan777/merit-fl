@@ -1,0 +1,22 @@
+{
+ "BS1/ICMPFlood1": "H1",
+ "BS1/SYNFlood1": "H1",
+ "BS1/SSH1": "H1",
+ "BS1/SYNScan1": "H1",
+ "BS1/Torshammer1": "H1",
+ "BS1/UDPScan1": "H2",
+ "BS1/Slowloris1": "H2",
+ "BS1/TCPConnect1": "H2",
+ "BS1/Goldeneye1": "H2",
+ "BS1/UDPFlood1": "H2",
+ "BS2/Goldeneye2": "H1",
+ "BS2/SSH2": "H1",
+ "BS2/UDPFlood2": "H1",
+ "BS2/ICMPFlood2": "H1",
+ "BS2/TCPConnect2": "H1",
+ "BS2/Torshammer2": "H2",
+ "BS2/Slowloris2": "H2",
+ "BS2/SYNScan2": "H2",
+ "BS2/SYNFlood2": "H2",
+ "BS2/UDPScan2": "H2"
+}

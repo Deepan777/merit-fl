@@ -17,7 +17,7 @@ simulation study of how intrusion evidence about IoT devices should be kept when
 |---|---|
 | `src/v2/` | Mobility and radio model, hierarchical federated training, containment, robustness statistics |
 | `src/data`, `src/models`, `src/federated`, `src/evaluation`, `src/utils` | Preprocessing, CNN-BiLSTM detector, aggregation, metrics and statistics |
-| `scripts/` | Trace generation, runs, calibration, robustness studies, real-flag replay and analyses |
+| `scripts/` | Trace generation (synthetic grid and real street network), runs, calibration, robustness studies, real-flag replays and analyses |
 | `configs/v2/` | Frozen configurations chosen on the validation split |
 | `experiments/v2_registry.csv` | Registry of every training run |
 | `data/v2_traces/` | SUMO mobility traces (`seed*.npz`) used by all runs |
@@ -42,7 +42,8 @@ generated with SUMO 1.27.1 (`SUMO_HOME` must point to the installation to regene
 
 See `data/README.md`.
 - **Included.** The generated data: mobility traces, run outputs, detector flag profiles, robustness results and the
-  per-window flag counts of the real-flag replay.
+  per-window flag counts of the real-flag replays (5G-NIDD devices and CICIDS2017 hosts). Traces 62–71 use map
+  data (c) OpenStreetMap contributors (Open Database Licence).
 - **Not redistributed.** The public intrusion-detection datasets (5G-NIDD, CICIoT2023 and CICIDS2017). The scripts
   download or read them from their original sources.
 

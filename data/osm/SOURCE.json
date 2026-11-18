@@ -1,0 +1,49 @@
+{
+ "source": "OpenStreetMap main API (api.openstreetmap.org/api/0.6/map), 3 x 3 tiles",
+ "bbox_west_south_east_north": [
+  6.1157,
+  49.6023,
+  6.1435,
+  49.6203
+ ],
+ "downloaded": "2026-11-10T23:36:29",
+ "files": {
+  "luxembourg_centre_tile00.osm.xml.gz": {
+   "bytes": 325769,
+   "sha256": "cf50fd9326de2d9697ad430a9e8c2c3e821afc7fe8509c800db1bc4c3affdc2a"
+  },
+  "luxembourg_centre_tile01.osm.xml.gz": {
+   "bytes": 411350,
+   "sha256": "6bd7fa7f8d47fc804a7a4417d78a5e7a201d19a7e07b88374f56a8aab15d5824"
+  },
+  "luxembourg_centre_tile02.osm.xml.gz": {
+   "bytes": 398080,
+   "sha256": "5c83d803e00692b7bcf927ef443ce6d71142079bea643a84c1291078f506b41c"
+  },
+  "luxembourg_centre_tile10.osm.xml.gz": {
+   "bytes": 343844,
+   "sha256": "5447d1189e27a00673b93b78b730a4f27aeb67cacd7c8d471cc6387a8603cc74"
+  },
+  "luxembourg_centre_tile11.osm.xml.gz": {
+   "bytes": 630305,
+   "sha256": "50782848f0080dad142eaf4046313d5874189192c7747246852ea5146671fd4a"
+  },
+  "luxembourg_centre_tile12.osm.xml.gz": {
+   "bytes": 499340,
+   "sha256": "db7bceebacee9e379440286c12a0104ea7b4d37aab23021b8b2eb4dff52f97ff"
+  },
+  "luxembourg_centre_tile20.osm.xml.gz": {
+   "bytes": 424499,
+   "sha256": "c32e040f8f68bd823a8b8726f7ddcb1c7d8dc4f9f4a3889feebe067f65ef232a"
+  },
+  "luxembourg_centre_tile21.osm.xml.gz": {
+   "bytes": 485063,
+   "sha256": "8f5aa1f0b6296972271bfc60b3098c225cca63a58765b1597b949282d2a07395"
+  },
+  "luxembourg_centre_tile22.osm.xml.gz": {
+   "bytes": 381173,
+   "sha256": "9e9fe3ea3fea4c03ed2876727837c47424092e22ad18c6139526da49cf2d31fd"
+  }
+ },
+ "licence": "Open Database Licence (ODbL), (c) OpenStreetMap contributors"
+}
